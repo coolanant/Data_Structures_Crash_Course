@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <string>
 using namespace std;
 
 // 1. Is Array Sorted
@@ -80,6 +81,65 @@ void sort(int *arr, int n){
     sort(arr,n-1);
 }
 
+// 5. String to Integer
+int string2int(string s,int i){
+    if(i==-1){
+        return 0;
+    }
+    int digit=s[i]-'0';
+    int smallans=string2int(s,i-1);
+    return smallans*10+digit;
+}
+
+// 6. Binary Search
+int binarySearch(vector<int> arr, int key, int start, int end){
+    if(end>=start){
+        int mid = start + (end - start) / 2;
+        if(arr[mid]==key){
+            return mid;
+        }
+        else{
+        if(arr[mid]>key){
+            return binarySearch(arr,key,start,mid-1);
+        }
+        else{
+        return binarySearch(arr,key,mid+1,end);
+        }
+        }
+    }
+    else{
+        return -1;
+    }
+}
+
+// 7. Replace pi -> 3.14  (xpiskndjnnc -> x3.14skndjnnc)
+void replacePi(char s[],int i){
+    if(s[i]=='\0'){
+        cout<<s<<endl;
+        return;
+    }
+    else{
+        if(s[i]=='p' && s[i+1]=='i'){
+            //shift and replace
+            int j=i+2;
+            while(s[j]!='\0'){
+                j++;
+            }
+            while(j>=i+2){
+                s[j+2]=s[j];
+                j--;
+            }
+            s[i]='3';
+            s[i+1]='.';
+            s[i+2]='1';
+            s[i+3]='4';
+            return replacePi(s,i+4);
+        }
+        return replacePi(s,i+1);
+    }
+    
+}
+
 int main() {
     // 1. Is Array Sorted
     vector<int> arr={1,2,5,7,9,1};
@@ -105,5 +165,16 @@ int main() {
     // cout<<sizeof(arr2)/sizeof(int);
     sort(arr2,6);
     cout<<"Sorted?:"<<isArraySorted2(arr2,6)<<endl;
-
+    
+    // 5. String to Integer
+    string s="12340";
+    cout<<string2int(s,s.length()-1)<<endl;
+    
+    // 6. Binary Search
+    vector<int> sortedArray={1,4,24,90,100};
+    cout<<"Binary Search:"<<binarySearch(sortedArray,24,0,sortedArray.size())<<endl;
+    
+    // 7. Replace pi -> 3.14  (xpiskndjnnc -> x3.14skndjnnc)
+    char ss[1000]="xpiskndjnncpim";
+    replacePi(ss,0);
 }
