@@ -4,7 +4,6 @@
 using namespace std;
 
 // 1. Boxes
-
 void permuteboxes(vector<int> arr,int tq, int queen_placed_so_far, string ans){
     if(queen_placed_so_far==tq){
         cout<<ans<<endl;
@@ -59,6 +58,21 @@ void coinchangec(vector<int> arr, int total, int paid, string ans,int lpi){
     }
 }
 
+// 3. Permuation of String
+void permutation2(string a, int l, int r)  
+{  
+    if (l == r)  
+        cout<<a<<endl;  
+    else{  
+        for (int i = l; i <= r; i++)  
+        {  
+            swap(a[l], a[i]);  
+            permutation2(a, l+1, r);
+            swap(a[l], a[i]);  
+        }  
+    }  
+}  
+
 int main() {
     // 1. Boxes
     vector<int> arr1(4);
@@ -73,4 +87,9 @@ int main() {
     coinchangep(arr,10,0,"");
     cout<<"C"<<endl;
     coinchangec(arr,10,0,"",0);
+    
+    // 3. Permuation of String
+    cout<<endl<<"Permuation:"<<endl;
+    permutation2("abc",0,2);
+    
 }
