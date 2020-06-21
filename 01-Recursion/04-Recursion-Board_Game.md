@@ -1,4 +1,4 @@
-### 04-Recursion (Borad Game)
+### 04.1-Recursion (Borad Game)
 
 ```c++
 #include <iostream>
