@@ -1,6 +1,8 @@
 ### 01-Recursion
 
-```c++
+<table>
+    <tr>
+        ```c++
 #include <iostream>
 using namespace std;
 
@@ -86,8 +88,11 @@ int multiply2(int a,int b){
         return a+multiply2(a,b-1);
     }
 }
-
-int main() {
+```
+    </tr>
+    <tr>
+    ```c++
+    int main() {
     //1. Factorial
     int x=5;
     cout<<factorial(x)<<endl;
@@ -114,3 +119,7 @@ int main() {
     cout<<multiply2(-4,5)<<endl;
 }
 ```
+
+    </tr>
+</table>
+
