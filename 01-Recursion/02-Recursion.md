@@ -1,6 +1,9 @@
-#include <iostream>
-#include <vector>
-#include <string>
+### 02-Recursion (Easy Questions)
+
+```c++
+#include<iostream>
+#include<vector>
+#include<string>
 using namespace std;
 
 // 1. Is Array Sorted
@@ -178,3 +181,4 @@ int main() {
     char ss[1000]="xpiskndjnncpim";
     replacePi(ss,0);
 }
+```
