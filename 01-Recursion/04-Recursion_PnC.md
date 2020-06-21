@@ -1,3 +1,6 @@
+### 04.4-Recursion (PnC)
+
+```c++
 #include <iostream>
 #include<vector>
 #include<string>
@@ -90,6 +93,6 @@ int main() {
     
     // 3. Permuation of String
     cout<<endl<<"Permuation:"<<endl;
-    permutation2("abc",0,2);
-    
+    permutation2("abc",0,2);   
 }
+```
