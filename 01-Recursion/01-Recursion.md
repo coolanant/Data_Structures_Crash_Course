@@ -1,3 +1,5 @@
+
+```c++
 #include <iostream>
 using namespace std;
 
@@ -110,3 +112,4 @@ int main() {
     //8. Multiply2
     cout<<multiply2(-4,5)<<endl;
 }
+```
