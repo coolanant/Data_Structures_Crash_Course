@@ -9,4 +9,4 @@
 5. [Maze](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/04-Recursion_Maze.md)
 6. [Queen Problem](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/04-Recursion_N_Queen.md)
 7. [PnC](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/04-Recursion_PnC.md)
-
+8. [Sudoku](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/05-Recursion-Sudoku.md)
