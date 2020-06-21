@@ -1,3 +1,6 @@
+### 04.3-Recursion (Queen Problem)
+
+```c++
 #include <iostream>
 #include<vector>
 #include<string>
@@ -72,3 +75,4 @@ int main() {
     vector<vector<int> > chess(3,vector<int>(3));
     nqueen(chess,0,"",-1);
 }
+```
