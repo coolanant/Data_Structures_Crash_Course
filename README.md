@@ -1,6 +1,6 @@
 # Data-Structures
 
-## [Recursion](https://github.com/coolanant/Data-Structures/tree/master/01-Recursion)
+## * [Recursion](https://github.com/coolanant/Data-Structures/tree/master/01-Recursion)
 
 1. [01-Basics](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/01-Recursion.md)
 2. [02-Easy Questions](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/02-Recursion.md)
@@ -11,7 +11,7 @@
 7. [PnC](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/04-Recursion_PnC.md)
 8. [Sudoku](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/05-Recursion-Sudoku.md)
 
-## [Dynamic Programming Questions](https://github.com/coolanant/Data-Structures/tree/master/02-DP)
+* ## [Dynamic Programming Questions](https://github.com/coolanant/Data-Structures/tree/master/02-DP)
 
 1. [Fibonnaci](https://github.com/coolanant/Data-Structures/blob/master/02-DP/01-Fibonnaci.md)
 2. [Min Step To One](https://github.com/coolanant/Data-Structures/blob/master/02-DP/02-MinStepToOne.md)
