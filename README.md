@@ -1,7 +1,7 @@
 # Data-Structures
-<div style="color:red">
+
 * ## [Recursion](https://github.com/coolanant/Data-Structures/tree/master/01-Recursion)
-</div>
+
 1. [01-Basics](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/01-Recursion.md)
 2. [02-Easy Questions](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/02-Recursion.md)
 3. [03-Good Questions](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/03-Recursion.md)
