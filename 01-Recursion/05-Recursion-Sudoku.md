@@ -13,7 +13,7 @@ bool canPlace(int mat[][9],int i,int j, int n, int number){
         }
     }
     //check small box
-    int rn=sqrt(number);
+    int rn=sqrt(n);
     int sx=(i/rn)*rn;
     int sy=(j/rn)*rn;
     
