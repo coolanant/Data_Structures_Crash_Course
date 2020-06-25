@@ -26,7 +26,7 @@
 11. [Matrix Chain Multiplication](https://github.com/coolanant/Data-Structures/blob/master/02-DP/11-MatrixChainMultiplication.md)
 12. [Min Palindromic Cut](https://github.com/coolanant/Data-Structures/blob/master/02-DP/12.%20MinPalindromicCut.md)
 
-* ## Tree
+* ## [Tree](https://github.com/coolanant/Data-Structures/tree/master/03-Tree)
 
 1. [Generic Tree](https://github.com/coolanant/Data-Structures/blob/master/03-Tree/01-GenericTree.md)
 - Build,Print
