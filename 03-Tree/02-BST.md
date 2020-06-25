@@ -31,18 +31,6 @@ TreeNode *CreateBst(TreeNode*root, int d){
     return root;
 }
 
-TreeNode* buildBST(){
-    int d;
-    cin>>d;
-    TreeNode *root=NULL;
-    while(d!=-1){
-        root=CreateBst(root, d);
-        cin>>d;
-    }
-    return root;
-}
-
-
 // 2. print
 void print(TreeNode*root){
     if(root!=NULL){
@@ -173,6 +161,19 @@ linkedList flatten(TreeNode*root){
     
     return ll;
 }
+
+// 
+TreeNode* buildBST(){
+    int d;
+    cin>>d;
+    TreeNode *root=NULL;
+    while(d!=-1){
+        root=CreateBst(root, d);
+        cin>>d;
+    }
+    return root;
+}
+
 
 int main() {
     // 1. Create BST
