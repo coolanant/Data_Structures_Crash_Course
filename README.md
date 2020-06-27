@@ -1,6 +1,6 @@
 # Data-Structures
 
-* ## [Recursion](https://github.com/coolanant/Data-Structures/tree/master/01-Recursion)
+1. ## [Recursion](https://github.com/coolanant/Data-Structures/tree/master/01-Recursion)
 
 1. [01-Basics](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/01-Recursion.md)
 2. [02-Easy Questions](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/02-Recursion.md)
@@ -11,7 +11,7 @@
 7. [PnC](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/04-Recursion_PnC.md)
 8. [Sudoku](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/05-Recursion-Sudoku.md)
 
-* ## [Dynamic Programming Questions](https://github.com/coolanant/Data-Structures/tree/master/02-DP)
+2. ## [Dynamic Programming Questions](https://github.com/coolanant/Data-Structures/tree/master/02-DP)
 
 1. [Fibonnaci](https://github.com/coolanant/Data-Structures/blob/master/02-DP/01-Fibonnaci.md)
 2. [Min Step To One](https://github.com/coolanant/Data-Structures/blob/master/02-DP/02-MinStepToOne.md)
@@ -26,7 +26,7 @@
 11. [Matrix Chain Multiplication](https://github.com/coolanant/Data-Structures/blob/master/02-DP/11-MatrixChainMultiplication.md)
 12. [Min Palindromic Cut](https://github.com/coolanant/Data-Structures/blob/master/02-DP/12.%20MinPalindromicCut.md)
 
-* ## [Tree](https://github.com/coolanant/Data-Structures/tree/master/03-Tree)
+3. ## [Tree](https://github.com/coolanant/Data-Structures/tree/master/03-Tree)
 
 1. [Generic Tree](https://github.com/coolanant/Data-Structures/blob/master/03-Tree/01-GenericTree.md)
 - Build,Print
