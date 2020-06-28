@@ -44,3 +44,11 @@
 * ## [Tries](https://github.com/coolanant/Data-Structures/tree/master/04-Tries)
 
 * ## [Graphs](https://github.com/coolanant/Data-Structures/tree/master/05-Graphs)
+
+* ## Greedy Algorithm
+
+1. [Indian Coin Change](https://github.com/coolanant/Data-Structures/blob/master/06-Greedy/01-Indian%20Coin%20Change.md)
+2. [Activity Selection](https://github.com/coolanant/Data-Structures/blob/master/06-Greedy/02-ActivitySelection.md)
+3. [Connecting Balck & White Dots](https://github.com/coolanant/Data-Structures/blob/master/06-Greedy/03-ConnectingWires.md)
+4. [Load balancer](https://github.com/coolanant/Data-Structures/blob/master/06-Greedy/04-LoadBalncer.md)
+
