@@ -43,14 +43,14 @@ int minCoinChange2(vector<int> coins, int n, int dp[]){
 }
 
 // 3. TOTAL WAYS
-int totalWays( vector<int> coins, int m, int n ){ 
-    vector<int> table(n+1,0);
+int totalWays(vector<int>& coins, int amount) {
+     vector<int> table(amount+1,0);
     table[0] = 1;
-    for(int i=0; i<m; i++) 
-        for(int j=coins[i]; j<=n; j++) 
+    for(int i=0; i<coins.size(); i++) 
+        for(int j=coins[i]; j<=amount; j++) 
             table[j] += table[j-coins[i]]; 
-    return table[n]; 
-} 
+    return table[amount]; 
+}
 
 int main() {
     vector<int> coins={1,7,10};
@@ -64,6 +64,6 @@ int main() {
     cout<<minCoinChange2(coins,n,dp)<<endl;
     
     // 3. Total Ways
-    cout<<totalWays(coins,coins.size(),n);
+    cout<<totalWays(coins,n);
 }
 ```
