@@ -51,18 +51,20 @@ void generateBrackets(string ans,int n, int i, int closing, int opening){
     }
 }
 
-// 4. 0/1 KnapSack
-int knapsack(int w[],int p[],int n, int cap){
-    if(n==0 ||cap==0){
+// 4. 0/1 KnapSack 
+// - DP Solution
+int knapsack(vector<int> w,vector<int> p,int i, int cap,unordered_map<int,unordered_map<int,int> > &dp){
+    if(i==w.size() ||cap==0){
         return 0;
     }
+    if(dp[i][w[i]]!=0) return dp[i][w[i]];
     int ans=0;
     int inc=0,exc=0;
-    if(cap>=w[n-1]){
-         inc= p[n-1]+ knapsack(w,p,n-1,cap-w[n-1]);
+    if(cap>=w[i]){
+         inc= p[i]+ knapsack(w,p,i+1,cap-w[i],dp);
     }
-    exc=knapsack(w,p,n-1,cap);
-    return ans=max(inc,exc);
+    exc=knapsack(w,p,i+1,cap,dp);
+    return dp[i][w[i]]=ans=max(inc,exc);
 }
 
 //5. Phone Keypad
@@ -120,10 +122,11 @@ int main() {
   generateBrackets("",3,0,0,0);
   
   // 4. 0/1 KnapSack
-  int weights[]={5,3,2,1};
-  int prices[]={100,30,20,40};
+  vector<int> weights={5,3,2,1};
+  vector<int> prices={100,30,20,40};
   int capacity=7;
-  cout<<knapsack(weights,prices,4,capacity)<<endl;
+  unordered_map<int,unordered_map<int,int> > dp;
+  cout<<knapsack(weights,prices,0,capacity,dp)<<endl;
   
   //5. Phone Keypad
   vector<int> in={6,2};
