@@ -62,19 +62,17 @@ void coinchangec(vector<int> arr, int total, int paid, string ans,int lpi){
 }
 
 // 3. Permuation of String
-void permutation2(string a, int l, int r)  
-{  
-    if (l == r)  
-        cout<<a<<endl;  
-    else{  
-        for (int i = l; i <= r; i++)  
-        {  
-            swap(a[l], a[i]);  
-            permutation2(a, l+1, r);
-            swap(a[l], a[i]);  
-        }  
-    }  
-}  
+void permutation(string in,string ans){
+    if(in.length()==0){
+        cout<<ans<<endl; return;
+    }
+    for(int i=0;i<in.size();i++){
+        char ch=in[i];
+        string left=in.substr(0,i);
+        string right=in.substr(i+1);
+        permutation(left+right,ans+ch);
+    }
+}
 
 int main() {
     // 1. Boxes
@@ -93,6 +91,7 @@ int main() {
     
     // 3. Permuation of String
     cout<<endl<<"Permuation:"<<endl;
-    permutation2("abc",0,2);   
+    string in="abc";
+    permutation(in,""); 
 }
 ```
