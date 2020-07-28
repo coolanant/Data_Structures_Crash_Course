@@ -9,6 +9,6 @@
 7. [Max Gold Mine](https://github.com/coolanant/Data-Structures/blob/master/02-DP/07-MaxGoldMine.md)
 8. [Palindromic SubString Count](https://github.com/coolanant/Data-Structures/blob/master/02-DP/08-PalindromeSubStringCount.md)
 9. [Rod Cutting](https://github.com/coolanant/Data-Structures/blob/master/02-DP/09-Rod-Cutting.md)
-10. [Longest Inc Subsequence](https://github.com/coolanant/Data-Structures/blob/master/02-DP/10-LongestIncSubsequence.md)
+10. [Longest Inc Subsequence](https://github.com/coolanant/Data_Structures_Crash_Course/blob/master/02-DP/10-LIS-LCS.md)
 11. [Matrix Chain Multiplication](https://github.com/coolanant/Data-Structures/blob/master/02-DP/11-MatrixChainMultiplication.md)
 12. [Min Palindromic Cut](https://github.com/coolanant/Data-Structures/blob/master/02-DP/12.%20MinPalindromicCut.md)
