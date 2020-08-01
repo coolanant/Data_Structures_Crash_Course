@@ -155,7 +155,7 @@ HBPair isHBT(TreeNode*root){
     HBPair left=isHBT(root->left);
     HBPair right=isHBT(root->right);
 
-    ob.height=left.height+right.height+1;
+    ob.height= max(left.height,right.height) +1;
 
     if(left.balance && right.balance && abs(left.height-right.height)<=1){
         ob.balance=true;
