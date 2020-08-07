@@ -1,4 +1,5 @@
 ### 03-Recursion (Good Questions)
+
 ```c++
 #include<iostream>
 #include<string>
@@ -8,7 +9,7 @@ using namespace std;
 // 1. Tower Of Hanoi
 void toh(int n, char from, char to,char aux){
     if(n==1){
-        cout<<"Disk 1 "<<from<<":"<<to<<endl;  
+        cout<<"Disk 1 "<<from<<":"<<to<<endl;
         return;
     }
     toh(n-1,from,aux,to);
@@ -51,7 +52,7 @@ void generateBrackets(string ans,int n, int i, int closing, int opening){
     }
 }
 
-// 4. 0/1 KnapSack 
+// 4. 0/1 KnapSack
 // - DP Solution
 int knapsack(vector<int> w,vector<int> p,int i, int cap,unordered_map<int,unordered_map<int,int> > &dp){
     if(i==w.size() ||cap==0){
@@ -83,25 +84,20 @@ void phoneKeypad(vector<int> in, string out, int i){
 }
 
 // 6.Number To Characters 1->A 10->J (1-26)
-void generateString(char *in,char*out, int i,int j){
-    if(in[i]=='\0'){
-        out[j]='\0';
-        cout<<out<<endl;
-        return;
+void numtoChars(string in,string out,int i){
+    if(i>=in.length()){
+        cout<<out<<endl;return;
     }
-    
-    int digit=in[i]-'0';
-    char ch=digit + 'A' - 1;
-    out[j]=ch;
-    generateString(in,out,i+1,j+1);
-    
-    if(in[i+1]!='\0'){
-        int secondDigit=in[i+1] -'0';
-        int no=digit*10 + secondDigit;
-        if(no<=26){
-            ch=no + 'A' - 1;
-            out[j]=ch;
-            generateString(in,out,i+2,j+1);
+    int fdigit=in[i]-'0';
+    char ch= fdigit + 'A' - 1;
+    numtoChars(in,out+ch,i+1);
+
+    if(i+1!=in.length()){
+        int sdigit=in[i+1]-'0';
+        int no=fdigit*10+sdigit;
+        if(no<=26 && no>=1){
+            char ch=no+'A'-1;
+            numtoChars(in,out+ch,i+2);
         }
     }
 }
@@ -113,30 +109,29 @@ int main() {
   // 2. Subsequence/Subset
   string s="abc";
   subsequence(s,"");cout<<endl;
-  
+
   char s2[]="abc";
   char out[5];
   subsequence2(s2,out,0,0);
-  
+
   //3. generate brackets
   generateBrackets("",3,0,0,0);
-  
+
   // 4. 0/1 KnapSack
   vector<int> weights={5,3,2,1};
   vector<int> prices={100,30,20,40};
   int capacity=7;
   unordered_map<int,unordered_map<int,int> > dp;
   cout<<knapsack(weights,prices,0,capacity,dp)<<endl;
-  
+
   //5. Phone Keypad
   vector<int> in={6,2};
   phoneKeypad(in,"",0);cout<<endl;
-  
+
   // 6.Number To Characters 1->A 10->J (1-26)
-  char input[]="1234";
-  char output[10];
-  generateString(input,output,0,0);
-  
+  string s="123";
+  numtoChars(s,"",0);
+
   return 0;
 }
 ```
