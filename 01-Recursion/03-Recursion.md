@@ -58,14 +58,14 @@ int knapsack(vector<int> w,vector<int> p,int i, int cap,unordered_map<int,unorde
     if(i==w.size() ||cap==0){
         return 0;
     }
-    if(dp[i][w[i]]!=0) return dp[i][w[i]];
+    if(dp[i][cap]!=0) return dp[i][cap];
     int ans=0;
     int inc=0,exc=0;
     if(cap>=w[i]){
          inc= p[i]+ knapsack(w,p,i+1,cap-w[i],dp);
     }
     exc=knapsack(w,p,i+1,cap,dp);
-    return dp[i][w[i]]=ans=max(inc,exc);
+    return dp[i][cap]=ans=max(inc,exc);
 }
 
 //5. Phone Keypad

@@ -10,7 +10,6 @@ int oneTransaction(vector<int> arr){
     //     minl=min(minl,arr[i]);
     // }
     // return ans;
-    
     int maxl=arr[arr.size()-1];
     int ans2=0;
     for(int i=n-2;i>=0;i--){
@@ -45,7 +44,6 @@ int twoTransaction(vector<int> prices){
 // Add all the +ve strokes(slopes)
 int multipleTransaction(vector<int> arr){
     if(arr.size()==0||arr.size()==1) return 0;
-
     int cs=0;
     int ans=0;
     for(int i=0;i<arr.size()-1;i++){
@@ -77,7 +75,7 @@ int multipleTransactoinWithFee(vector<int>& prices,int fee) {
 }
 
 // 5. Infinite Transacation - with 1 day Cooldown
-int multipleTransactionWithCoolDown(vector<int> arr,int fee){
+int multipleTransactionWithCoolDown(vector<int> arr){
     int buy=-arr[0];
     int sell=0;
     int cooldown=0;
