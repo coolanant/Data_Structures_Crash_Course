@@ -1,16 +1,18 @@
 ## Recursion
 
-# 1. [01-Basics](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/01-Recursion.md)
-1. Factorial
-2. Counting
-3. Counting in Reverse Order
-4. Fibonnaci
-5. Power
-6. Fast Power
-7. Multiply
-8. Multiply (with negative)
+# 1. [Basics](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/01-Recursion.md)
+<details close>
+1. Factorial <br/>
+2. Counting <br/>
+3. Counting in Reverse Order <br/>
+4. Fibonnaci <br/>
+5. Power <br/>
+6. Fast Power <br/>
+7. Multiply <br/>
+8. Multiply (with negative)<br/>
+</details>
 
-# 2. [02-Easy Questions](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/02-Recursion.md)
+# 2. [Easy Questions](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/02-Recursion.md)
 1. IsArraySorted
 2. 2048 Problem
 3. Search, Search-last, SearchAll
@@ -18,7 +20,7 @@
 5. binary Search
 6. Replace Pi
 
-# 3. [03-Good Questions](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/03-Recursion.md)
+# 3. [Good Questions](https://github.com/coolanant/Data-Structures/blob/master/01-Recursion/03-Recursion.md)
 1. Tower of Hanoi
 2. Find All Subsequence
 3. Generate Brackets
