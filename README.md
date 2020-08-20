@@ -2,7 +2,6 @@
 
 * ## [Recursion](https://github.com/coolanant/Data-Structures/tree/master/01-Recursion)
 
-## Recursion
 <details close>
   <summary>1. Basics</summary>
 1. Factorial <br/>
