@@ -83,11 +83,11 @@ TreeNode* deleteNode(TreeNode*root,int d){
     if(root==NULL){
         return NULL;
     }
-    if(d<root->data){
+    if(d < root->data){
         root->left=deleteNode(root->left,d);
         return root;
     }
-    if(d>root->data){
+    if(d > root->data){
         root->right=deleteNode(root->right,d);
         return root;
     }
@@ -120,7 +120,7 @@ TreeNode* deleteNode(TreeNode*root,int d){
     return root;
 }
 
-// 7. Flatten - BST->LL 
+// 7. Flatten - BST->LL
 class linkedList{
     public:
     TreeNode*head;
@@ -140,14 +140,14 @@ linkedList flatten(TreeNode*root){
     // 1 children
     if(root->left!=NULL && root->right==NULL){
         linkedList left=flatten(root->left);
-        
+
         ll.head=left.head;
         ll.tail=root;
         return ll;
     }
     if(root->left==NULL && root->right!=NULL){
         linkedList right=flatten(root->right);
-        
+
         ll.head=root;
         ll.tail=right.tail;
         return ll;
@@ -155,14 +155,14 @@ linkedList flatten(TreeNode*root){
     // 2children
     linkedList left=flatten(root->left);
     linkedList right=flatten(root->right);
-    
+
     ll.head=left.head;
     ll.tail=right.tail;
-    
+
     return ll;
 }
 
-// 
+//
 TreeNode* buildBST(){
     int d;
     cin>>d;
@@ -180,38 +180,38 @@ int main() {
     int n;
     cin>>n;
     TreeNode*root=NULL;
-    for(int i=1;i<=n;i++){//5 2 1 3 9 4 
+    for(int i=1;i<=n;i++){//5 2 1 3 9 4
         int d;
         cin>>d;
         root=CreateBst(root,d);
     }
     TreeNode* bst=buildBST();//1 2 3 4 5 -1
-    
+
     // 2. Print
     cout<<"Print:";
     print(root);cout<<endl;
     print(bst);cout<<endl;
-    
+
     // 3. Find
     cout<<"Find:";
     TreeNode *f=Find(root,2);//if NULL
     cout<<f->data<<endl;
-    
+
     // 4. Find Min
     cout<<"FindMin:";
     TreeNode *fmini=FindMin(root);
     cout<<fmini->data<<endl;
-    
+
     // 5. IS BST
     cout<<"IS BST:";
     cout<<isBST(root)<<endl;
-    
+
     // 6. Delete
     deleteNode(root,1);
     print(root);cout<<endl;
-     
-    // 7. Flatten - BST->LL 
+
+    // 7. Flatten - BST->LL
     linkedList ll=flatten(root);
-    
+
 }
 ```
