@@ -233,31 +233,6 @@ TreeNode* increasingBST(TreeNode* root) {
 }
 ```
 
-## 12. Vertical Order Search Tree
-
-```c++
-map<int, vector<pair<int,int>> > m;
-void solve(TreeNode*root, int d, int level){
-    if(root==NULL) return;
-    m[d].push_back(make_pair(level,root->val));
-    solve(root->left, d-1, level+1);
-    solve(root->right, d+1, level+1);
-}
-vector<vector<int>> verticalTraversal(TreeNode* root) {
-    solve(root,0,0);
-    vector<vector<int> > ans;
-    for(auto it:m){
-        vector<int> path;
-        sort(it.second.begin(),it.second.end());
-        for(auto x:it.second){
-            path.push_back(x.second);
-        }
-        ans.push_back(path);
-    }
-    return ans;
-}
-```
-
 ## 13. Deepest Leaves Sum
 
 ```c++
@@ -300,4 +275,32 @@ int deepestLeavesSum(TreeNode* root) {
     return ans;
 }
 
+```
+
+## 14. Min Depth Of Binary Tree
+
+```c++
+int minDepth(TreeNode* root) {
+    if(root==NULL) return 0;
+
+    map<TreeNode*, int> height;
+    queue<TreeNode*> q;
+    q.push(root);
+    height[root]=0;
+
+    while(!q.empty()){
+        TreeNode *front=q.front();
+        q.pop();
+        if(front->left==NULL && front->right==NULL) return height[front]+1;
+        if(front->left){
+            q.push(front->left);
+            height[front->left]=height[front]+1;
+        }
+        if(front->right){
+            q.push(front->right);
+            height[front->right]=height[front]+1;
+        }
+    }
+    return 0;
+}
 ```
